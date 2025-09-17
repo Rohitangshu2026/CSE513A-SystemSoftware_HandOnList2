@@ -28,7 +28,7 @@ int main()
 	semun arg;
 	int choice,count;
 	
-	key = ftok(".", 'S');
+	key = ftok(".", 'L');
     if (key == -1) 
 	{
         perror("ftok failed");
@@ -74,16 +74,16 @@ Output:
 _______________________________________________
 rohit2026~$gcc 31.c
 rohit2026~$./a.out 
-Semaphore created with ID: 65536
+Semaphore created with ID: 65537
 1. Press 1 for Binary Semaphore
 2. Press 2 for Counting Semaphore
 Enter choice : 1
 Binary Semaphore initialized
 rohit2026~$./a.out 
-Semaphore created with ID: 65536
+Semaphore created with ID: 65537
 1. Press 1 for Binary Semaphore
 2. Press 2 for Counting Semaphore
-Enter choice : 2   
+Enter choice : 2
 Enter Counting Semaphore value: 5
 Counting Semaphore initialized
 ===============================================
